@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9E77085A26828B39009648DB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E77085926828B39009648DB /* main.cpp */; };
-		9E77086226828BF6009648DB /* bitset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E77086026828BF6009648DB /* bitset.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		9E77085626828B39009648DB /* bitset */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bitset; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E77085926828B39009648DB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		9E77086026828BF6009648DB /* bitset.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bitset.cpp; sourceTree = "<group>"; };
 		9E77086126828BF6009648DB /* bitset.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bitset.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				9E77085926828B39009648DB /* main.cpp */,
-				9E77086026828BF6009648DB /* bitset.cpp */,
 				9E77086126828BF6009648DB /* bitset.hpp */,
 			);
 			path = bitset;
@@ -123,7 +120,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E77086226828BF6009648DB /* bitset.cpp in Sources */,
 				9E77085A26828B39009648DB /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
