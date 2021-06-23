@@ -6,27 +6,19 @@
 #include <type_traits>
 #include <utility>
 #include <iostream>
+#include "helper.hpp"
 
 namespace bset
 {
-
-template <int x>
- struct log2 { enum { value = 1 + log2<x/2>::value }; };
-  
-template <> struct log2<1> { enum { value = 1 }; };
-
-template <int x>
- struct pow2 { enum { value = pow2<x - 1>::value * 2 }; };
-  
-template <> struct pow2<0> { enum { value = 1 }; };
-
 template<std::uint64_t value>
 struct bitset
 {
     bitset()
     : _bitset(value) {}
     
-    std::bitset<log2<std::integral_constant<std::uint64_t, value>::value>::value> _bitset;
+    std::bitset<value
+		? log2<value>::value + 1
+		: 1> _bitset;
     
     explicit constexpr operator std::uint64_t() const { return value; }
 };
