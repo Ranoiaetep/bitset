@@ -12,11 +12,13 @@ struct bitset
 	{
 		if constexpr (!(Value / 2))
 		{
+			
 		}
 	}
 
 	constexpr auto operator()() const
 	{
+
 	}
 };
 }
